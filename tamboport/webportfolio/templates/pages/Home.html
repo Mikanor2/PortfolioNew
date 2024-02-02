@@ -1,0 +1,16 @@
+{% extends 'pages/index.html' %}
+<section class="about-us">
+{% block content %}
+{% load static %}
+
+    <div class="about">
+      <img src="{% static 'image/logo.png'%}" class="pic1">
+      <div class="text">
+        <h2>Welcome!</h2>
+        <h5>What is this website? </h5>
+          <p>This website is my personal E-Portfolio, It is composed of my profile and the different projects i have done through out the years as well as my hobbies.</p>
+      </div>
+    </div>
+
+    </section>
+{% endblock %}

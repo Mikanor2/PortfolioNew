@@ -1,0 +1,32 @@
+{% load static %}
+ <nav class="navbar navbar-expand-lg sticky-top navbar-scroll shadow-0" style="background-color: #88AB8E;">
+
+  <image alt="logo" width="50" height="50" class="d-inline-block align-text-top" src="{% static 'image/logo.png'%}"> </image>
+   <a class="navbar-brand" style="color:black;" href="https://www.facebook.com/profile.php?id=100010876350532"> MTP: Tambo Portfolio</a>
+
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample01" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarExample01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link px-3" style="color:black;" href="{% url 'Home' %}" >Home</a>
+        </li>
+      </ul>
+
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link px-3" style="color:black;" href="{% url 'About' %}" >About</a>
+        </li>
+      </ul>
+
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link px-3" style="color:black;" href="{% url 'Info' %}" >Projects and Certificates</a>
+        </li>
+      </ul>
+
+
+    </div>
+</nav>
